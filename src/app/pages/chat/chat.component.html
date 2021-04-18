@@ -1,0 +1,30 @@
+<div class="row m-5">
+
+    <div   class="col col-md-6">
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item"><span style="font-weight: bold;">Welcome to Chat System</span></li>
+              <li class="list-group-item">This is a mainly a group chat system.</li>
+              <li class="list-group-item">You have to just write your name to be online on chat.</li>
+              <li class="list-group-item">If anyone is online on that chat system than you can get messages from him</li>
+              <li class="list-group-item">Let's chat !</li>
+              <li> <input type="checkbox" class="mr-1 ml-5" [(ngModel)]="check" required>Terms & Conditions*</li>
+             
+            </ul>
+          </div>
+    
+          <div class="mt-2" >
+              <button class="btn btn-success" [disabled]="!check" (click)="chatApp()">Chat</button>
+          </div>
+      </div>
+      <div class="col col-md-6">
+
+      </div>
+      
+</div>
+
+
+
+
+ 

@@ -1,0 +1,13 @@
+<div class="card mb-3 horizontal-display">
+    <div class="d-flex justify-content-center align-items-center">
+        <img [src]="user.picture" class="rounded-circle ml-2" 
+        width="30"
+        height="40"
+        alt="">
+    </div>
+    <div class="card-body">
+        <a class="card-title" (click)="findUser(user.id)">{{user.name | uppercase}}</a>
+        <p class="card-text">{{user.bio}}</p>
+        Direct Contact: <a href="tel:{{user.whatsapp}}">{{user.whatsapp}}</a>
+    </div>
+</div>
